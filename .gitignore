@@ -2,3 +2,4 @@
 *.ropeproject
 *.pyc
 *.swp
+jenkins_public_key.txt
