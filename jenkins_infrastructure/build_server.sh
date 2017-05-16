@@ -41,4 +41,5 @@ ssh ubuntu@$ip '
 
 # Install web server
 echo "Installing web server"
+ssh ubuntu@$ip 'mkdir /home/ubuntu/file_hosting'
 ssh ubuntu@$ip 'sudo docker run --name jenkins-nginx --restart=unless-stopped -v /home/ubuntu/file_hosting:/usr/share/nginx/html:ro -p 8080:80 -d nginx'
